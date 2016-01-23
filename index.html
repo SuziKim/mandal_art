@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">  
+      <!--materialize
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+      -->
+      
+      <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+         <!--html2canvas-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script> -->
+        <script type="text/javascript" src="../dist/html2canvas.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+      
+      
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" />  
+        <!--font Hanna-->
+            
+    </head>
+    <body id = "mycanvas">
+        <h1 style = "font-size: 100px">만다라트</h1>    
+        <p><h4>(Mandart)</h4></p>
+        <p><h5>만다라트는 일본의 디자이너 이마이즈미 히로아키가 개발한 아이디어 발상기법 입니다</h5></p>
+        <p><h5>가운데 칸에 핵심주제를 넣고 나머지 8칸에 생각을 채워 넣으시면 됩니다.</h5></p>
+            <p class = "start" id = "start"> START </p>
+    <!--first row-->
+    <div class= "container">
+        <div class = "all_tables" id = "all_tables">
+            <div class ="row">
+            <div class = "col-md-4">
+            <table id = "cell1" align = "center">
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #ff8a80"><textarea disabled style ="background-color: #ff8a80" id = "p1" type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "cell2" align = "center" >
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #ffd180"><textarea disabled style ="background-color: #ffd180" id = "p2"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "cell3" align = "center">
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #ffff8d"><textarea disabled style ="background-color: #ffff8d" id = "p3"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+        
+            </div>
+        
+        <!--second row-->    
+            <div class ="row">
+            <div class = "col-md-4">
+            <table id = "cell4" align = "center" >
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #ccff90"><textarea disabled style ="background-color: #ccff90" id = "p4"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "main" align = "center" >
+                <tr>
+                    <td style ="background-color: #ff8a80">
+                        <textarea style ="background-color: #ff8a80" id = "first" type="textarea" name="sub1"></textarea></td>
+                    <td style ="background-color: #ffd180">
+                        <textarea style ="background-color: #ffd180" id = "second" type="text" name="sub2"></textarea></td>
+                    <td style ="background-color: #ffff8d">
+                        <textarea style ="background-color: #ffff8d" id = "third" type="text" name="sub3"></textarea></td>
+                </tr>
+                <tr>
+                    <td style ="background-color: #ccff90">
+                        <textarea style ="background-color: #ccff90" id = "fourth" type="text" name="sub4"></textarea></td>
+                    <td><textarea placeholder = "Your Goal" type="text" name="main" id = "goal"></textarea></td>
+                    <td style ="background-color: #80d8ff">
+                        <textarea style ="background-color: #80d8ff" id = "fifth" type="text" name="sub5"></textarea></td>
+                </tr>
+                <tr>
+                    <td style ="background-color: #8c9eff">
+                        <textarea style ="background-color: #8c9eff" id = "sixth" type="text" name="sub6"></textarea></td>
+                    <td style ="background-color: #ea80fc">
+                        <textarea style ="background-color: #ea80fc" id = "seventh" type="text" name="sub7"></textarea></td>
+                    <td style ="background-color: #a7ffeb">
+                        <textarea style ="background-color: #a7ffeb" id = "eighth" type="text" name="sub8"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "cell5" align = "center">
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #80d8ff"><textarea disabled  style ="background-color: #80d8ff" id = "p5"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+
+        <!--third row-->            
+            <div class ="row">
+            <div class = "col-md-4">
+            <table id = "cell6" align = "center">
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #8c9eff"><textarea disabled style ="background-color: #8c9eff" id = "p6"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "cell7" align = "center" >
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #ea80fc"><textarea disabled style ="background-color: #ea80fc" id = "p7"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <div class = "col-md-4">
+            <table id = "cell8" align = "center" >
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td style ="background-color: #a7ffeb"><textarea disabled style ="background-color: #a7ffeb" id = "p8"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+                <tr>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                    <td><textarea type="text"></textarea></td>
+                </tr>
+            </table>
+            </div>
+            <p style = "color: #fff; font-size: 10px; text-align: right; margin-right: 5%">ⓒChang Hyun An</p>
+        </div>
+        </div>
+    </div>
+    
+        <!--<p class ="minimize" style = "background-color: #fff; border: 1px solid black; border-radius: 5px; width: 70px; text-align: center; margin:auto; display: block"> Minimize</p> 
+        <p class ="maximize" style = "background-color: #fff; border: 1px solid black; border-radius: 5px; width: 70px; text-align: center; margin:auto; margin-bottom: 50px;"> Maximize</p>-->
+        <div class = "btn-group" role = "group" style = "display:table; margin: 0 auto; margin-bottom: 20px">
+            <button type= "button" class = "btn btn-default" id = "minimize" style = "width: 150px">CLOSE ALL</button>
+            <button type= "button" class = "btn btn-danger" id = "maximize" style = "width: 150px">OPEN ALL</button>
+        </div>
+        
+        <p><button type="button" id = "button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal" style = "display: table; margin: 0 auto; width: 40%; margin-bottom: 5%">미리보기</button></p>
+    
+        
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+        
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">다운로드 받으려면 저장클릭</h5>
+                <h6 class= "modal-description">IE이용자는 오른쪽 버튼 > 다른 이름으로 저장 클릭</h6>
+              </div>
+              <div class="modal-body">
+                <p> <img src="" id ="savedimg" style = "width: 100%; height: 100%;"/></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" id = "download" value= "download" class="btn btn-default">저장</button>
+                <button type="button" id = "close" class="btn btn-default" data-dismiss="modal">닫기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal End-->
+        
+        <div class = "footer">
+            <div class = "row" style = "margin-bottom: 0.5%;">
+                <div class = "col-md-10 col-md-offset-1">
+                    <div style = "width: 100%; height: 100px; background-color: #cfd8dc">
+                        개발을 배운지 얼마 안된 초보 개발자입니다. 
+                        첫 개인 프로젝트인만큼 허접하지만 유용하게 쓰셨으면 좋겠습니다. 
+                        <p>피드백이나 개선방안은 
+                        제 페이스북(https://www.facebook.com/changhyun.a.an)으로 해주시면 감사하겠습니다. </p>
+                        <p style = "float: right">ⓒChang Hyun An</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    <!-- -->
+    </body>
+</html>

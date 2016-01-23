@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/earlyaccess/hanna.css);
+
+body {
+    background-color: #0097a7;
+    margin:20% 1% 0% 1%;
+    font-family: 'Hanna', sans-serif;
+    
+}
+
+p.start {
+    font-size: 18px; 
+    border: 1px solid black; 
+    border-radius: 5px; 
+    width: 70px; 
+    background-color: #fff ; 
+    text-align: center; 
+    margin: auto; 
+    margin-bottom: 50px; 
+    margin-top: 30px;
+}
+
+p.start:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid white;
+}
+
+.row {
+    margin-bottom: 3%;
+}
+.all_tables{
+    margin-top: 3%;
+}
+
+h1, h4, h5 {
+    color: #fff;
+    text-align: center;
+}
+
+table, tr, td, th {
+    border: 3.5px solid #e0e0e0;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    text-align: center;
+   
+}
+
+
+textarea{
+    color: #000;
+    margin: 0%;
+    text-align: center;
+    font-size: 16px;
+    background-color:inherit;
+    border: none;
+    width: 110px;
+    height: 100%;
+    resize: none;   
+    word-break: keep-all;
+}
+
+
+
+td {
+    
+    width: 110px;
+    height: 100px;
+    table-layout:fixed;
+    word-break: break-all;
+    padding: 0px;
+    
+}
+
+table {
+    /*border: 2px solid #000;*/
+}
+
+#button {
+    margin: auto;
+}
+
+.col-md-4 {
+    padding: 0px;
+}
+
+
+/*.row2 table{
+    display:inline-block;
+}
+
+#cell1, #cell4, #cell7 {
+    margin-left:12.5%;
+}
+
+#cell2, #cell3, #cell5, #cell6, #cell8, #cell9 {
+    float: left;
+    
+}
+
+
+#cell1, #cell2, #cell3, #cell4, #cell6, #cell7, #cell8, #cell9 {
+    visibility: hidden;
+}
+*/
