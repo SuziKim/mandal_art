@@ -27,9 +27,22 @@
         <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="stylesheet.css" type="text/css" />  
         <!--font Hanna-->
-            
+        <title>만다라트 기법</title>    
     </head>
     <body id = "mycanvas">
+        <!--FB JS Share Butt-->
+        <div id="fb-root"></div>
+            <script>
+                  (function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            </script>
+        
+        
         <h1 style = "font-size: 100px">만다라트</h1>    
         <p><h4>(Mandart)</h4></p>
         <p><h5>만다라트는 일본의 디자이너 이마이즈미 히로아키가 개발한 아이디어 발상기법 입니다</h5></p>
@@ -272,14 +285,20 @@
                         개발을 배운지 얼마 안된 초보 개발자입니다. 
                         첫 개인 프로젝트인만큼 허접하지만 유용하게 쓰셨으면 좋겠습니다. 
                         <p>피드백이나 개선방안은 
-                        제 페이스북(https://www.facebook.com/changhyun.a.an)으로 해주시면 감사하겠습니다. </p>
-                        <p style = "float: right">ⓒChang Hyun An</p>
+                        제 페이스북(facebook.com/xyz.achoo)으로 해주시면 감사하겠습니다. </p>
+                        <p style ="display: none"> </p>
+                        <p><div class="fb-share-button" data-href="http://mandart.xyz/" data-layout="button_count"></div></p>
+                        <p style = "float: right">Copyright ⓒChang Hyun An</p>
                     </div>
                 </div>
             </div>
             
         </div>
-        
+        <meta property="og:title" content="만다라트(Mandal-Art) 발상 기법"/>    
+        <meta property="og:description" content="만다라트는 일본의 디자이너 이마이즈미 히로아키가 개발한 아이디어 발상기법 입니다
+가운데 칸에 핵심주제를 넣고 나머지 8칸에 생각을 채워 넣으시면 됩니다." />
+        <meta property="article:author" content="안창현" />
+        <meta property="og:image" content=".title.png" />
     <!-- -->
     </body>
 </html>
