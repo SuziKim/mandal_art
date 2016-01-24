@@ -1,26 +1,9 @@
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+Hi This is Chang Hyun An
+And this is my first individual project.
+I started coding like a month ago (written day 2016.Jan.25)
+Anyways
+this is called Mandal-art, a brainstorming tool, which is invented by one of the Japanese designer.
 
-
-Hi there! Welcome to Cloud9 IDE!
-
-To get you started, we included a small hello world application.
-
-1) Open the hello-world.html
-
-2) Click on the Preview button to open a live preview pane
-
-3) Make some changes to the file, save, watch the preview, and have fun!
-
-Happy coding!
-The Cloud9 IDE team
-
-
-## Support & Documentation
-
-Visit http://docs.c9.io for documentation, or http://support.c9.io for support.
-To watch some training videos, visit http://www.youtube.com/user/c9ide
+To start, fill in your main idea/goal in the middle of 3 x 3 table.
+And type supporting ideas or 'to-do's in the rest of the cells.
+Then fill in the details of the supporting ideas in the table that appears on every side.
