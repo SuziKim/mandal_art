@@ -79,16 +79,16 @@ $(document).ready(function() {
 //screen capture
 
     $("#button").on('click',  function() {
-			html2canvas($(".all_tables"), {
+			html2canvas($(".container-fluid"), {
 				onrendered: function(canvas) {
 					//$(".modal-content").appendChild(canvas);
 				//},
 			//var img = canvas.toDataURL('image/png');
 		    //이거랑 다운로드랑 한 세트
-		    var img = document.createElement("a");
-               img.href = canvas.toDataURL();
+		    var img = new Image();
+               img.src = canvas.toDataURL();
             
-			$("#savedimg").attr('src', (img.href));
+			$("#savedimg").attr('src', (img.src));
 			$("#myModal").modal('show');
 			
 			//download
@@ -100,7 +100,6 @@ $(document).ready(function() {
 			});
 		});
 	
-    
 //clone value to empty cell
 //live display
     var subgoal1 = document.getElementById('first');
