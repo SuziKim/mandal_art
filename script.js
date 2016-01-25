@@ -85,10 +85,10 @@ $(document).ready(function() {
 				//},
 			//var img = canvas.toDataURL('image/png');
 		    //이거랑 다운로드랑 한 세트
-		    var img = new Image();
-               img.src = canvas.toDataURL();
+		    var img = document.createElement("a");
+               img.href = canvas.toDataURL();
             
-			$("#savedimg").attr('src', (img.src));
+			$("#savedimg").attr('src', (img.href));
 			$("#myModal").modal('show');
 			
 			//download
