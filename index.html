@@ -8,7 +8,10 @@
       <meta property="article:author" content="안창현"/>
       <meta property="og:image" content="http://i.imgur.com/EqAJLuw.png"/>
       <meta property="og:image:width" content="200" /> 
-<meta property="og:image:height" content="200" />
+      <meta property="og:image:height" content="50" />
+      <!--이걸로 모바일에서 보이는 화면 스케일 조절-->
+      <meta name = "viewport" content = "width = device-width, initial-scale=0.3">
+      
       <!--materialize
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
@@ -55,10 +58,10 @@
         <p><h5>가운데 칸에 핵심주제를 넣고 나머지 8칸에 생각을 채워 넣으시면 됩니다.</h5></p>
             <p class = "start" id = "start"> START </p>
     <!--first row-->
-    <div class= "container">
+    <div class= "container-fluid">
         <div class = "all_tables" id = "all_tables">
             <div class ="row">
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell1" align = "center">
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -77,7 +80,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell2" align = "center" >
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -96,7 +99,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell3" align = "center">
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -120,7 +123,7 @@
         
         <!--second row-->    
             <div class ="row">
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell4" align = "center" >
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -139,7 +142,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "main" align = "center" >
                 <tr>
                     <td style ="background-color: #ff8a80">
@@ -166,7 +169,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell5" align = "center">
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -189,7 +192,7 @@
 
         <!--third row-->            
             <div class ="row">
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell6" align = "center">
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -208,7 +211,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell7" align = "center" >
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -227,7 +230,7 @@
                 </tr>
             </table>
             </div>
-            <div class = "col-md-4">
+            <div class = "col-md-4 col-sm-4">
             <table id = "cell8" align = "center" >
                 <tr>
                     <td><textarea type="text"></textarea></td>
@@ -260,6 +263,7 @@
         
         <p><button type="button" id = "button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal" style = "display: table; margin: 0 auto; width: 40%; margin-bottom: 5%">미리보기</button></p>
         
+        <div 
          <!--ADSENSE-->
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- 만다라트 -->
@@ -298,7 +302,7 @@
         
         <div class = "footer">
             <div class = "row" style = "margin-bottom: 0.5%;">
-                <div class = "col-md-10 col-md-offset-1">
+                <div class = "col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
                     <div style = "width: 100%; background-color: #cfd8dc">
                         <div style = "margin-left: 4px; margin-top: 4px">
                         개발을 배운지 얼마 안된 초보 개발자입니다. 
