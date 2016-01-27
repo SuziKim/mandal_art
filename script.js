@@ -75,9 +75,33 @@ $(document).ready(function() {
         $("html, body").animate({scrollTop: $("#main").offset().top - $(window).height()/4},500);
     	sub.css('opacity', '1');
      });
+     
+    $("#reset").click(function(){
+        $("html, body").find('textarea').val('');
+     }); 
+    
+//close button
+    $(".btn-xs").hover(
+        function () {
+        $(this).css("opacity","1");
+    },
+        function () {
+        $(this).css("opacity","0");
+    });
+//close & delete
+    $(".btn-xs").click(function(event) {
+        if ($(this).is('#close-btn')){
+            $(event.target).closest('table').css("opacity","0");
+        }
+        else if ($(this).is('#delete-btn')){
+           $(event.target).closest('table').find('textarea[type="text"]').val("");
+        }
+        });
+    
+
+ 
     
 //screen capture
-
     $("#button").on('click',  function() {
 			html2canvas($(".container-fluid"), {
 				onrendered: function(canvas) {
