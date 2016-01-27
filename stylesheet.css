@@ -41,8 +41,8 @@ h1, h4, h5 {
     text-align: center;
 }
 
-table, tr, td, th {
-    border: 1px solid #bdbdbd;
+table, tr, td{
+    border: 2px solid #bdbdbd;
     background-color: #fff;
     color: #000;
     font-size: 15px;
