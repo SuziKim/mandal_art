@@ -2,22 +2,9 @@
 <html>
     <head>
       <meta charset="UTF-8">
-      <meta property="og:title" content="만다라트(Mandal-Art) 발상 기법"/>    
-      <meta property="og:description" content="만다라트는 일본의 디자이너 이마이즈미 히로아키가 개발한 아이디어 발상기법 입니다
-      가운데 칸에 핵심주제를 넣고 나머지 8칸에 생각을 채워 넣으시면 됩니다."/>
-      <meta property="article:author" content="안창현"/>
-      <meta property="og:image" content="http://i.imgur.com/EqAJLuw.png"/>
-      <meta property="og:image:width" content="200" /> 
-      <meta property="og:image:height" content="50" />
-      <!--이걸로 모바일에서 보이는 화면 스케일 조절-->
+      <meta property="og:title" content="Mandalart"/>    
       <meta name = "viewport" content = "width = device-width, initial-scale=0.3">
       
-      <!--materialize
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
-      -->
-      
-      <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         
         <!-- Optional theme -->
@@ -37,25 +24,17 @@
         <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="stylesheet.css" type="text/css" />  
         <!--font Hanna-->
-        <title>만다라트 기법</title>    
+        <title>Online Mandalart</title>    
     </head>
-    <body id = "mycanvas">
-        <!--FB JS Share Butt-->
-        <div id="fb-root"></div>
-            <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5";
-              fjs.parentNode.insertBefore(js, fjs);
-            }(document, 'script', 'facebook-jssdk'));
-            </script>
-        
-        
-        <h1 style = "font-size: 100px">만다라트</h1>    
-        <p><h4>(Mandal-Art)</h4></p>
-        <p><h5>만다라트는 일본의 디자이너 이마이즈미 히로아키가 개발한 아이디어 발상기법 입니다</h5></p>
-        <p><h5>가운데 칸에 핵심주제를 넣고 나머지 8칸에 생각을 채워 넣으시면 됩니다.</h5></p>
+
+    <body id = "mycanvas">        
+        <h1 style = "font-size: 100px">Mandalart</h1>    
+        <p><h5>Original Design: Imaizumi Hiroaki</h5></p>
+        <p><h5>Original Developer: Chang Hyun An
+      (<a href="https://github.com/ach8/mandal_art">github</a>)</h5></p>
+        <p><h5>Modifier: Suzi Kim
+      (<a href="https://github.com/suzikim/mandal_art">github</a>)</h5></p>
+
             <p class = "start" id = "start"> START </p>
     <!--first row-->
     <div class= "container-fluid" style = "padding: 1px">
@@ -70,10 +49,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #ff8a80">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #ff8a80" id = "p1">
+                    <td class ="majorcell" style ="background-color: #0072BE">
+                        <textarea disabled style ="background-color: #0072BE" id = "p1">
                         </textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
@@ -93,10 +70,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #ffd180">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #ffd180" id = "p2"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #00B6E1">
+                        <textarea disabled style ="background-color: #00B6E1" id = "p2"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -115,10 +90,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #ffff8d">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #ffff8d" id = "p3"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #00B552">
+                        <textarea disabled style ="background-color: #00B552" id = "p3"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -142,10 +115,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #ccff90">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #ccff90" id = "p4"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #A8D800">
+                        <textarea disabled style ="background-color: #A8D800" id = "p4"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -158,27 +129,27 @@
             <div class = "col-md-4 col-sm-4">
             <table id = "main" align = "center" >
                 <tr>
-                    <td style ="background-color: #ff8a80">
-                        <textarea style ="background-color: #ff8a80" id = "first" type="textarea" name="sub1"></textarea></td>
-                    <td style ="background-color: #ffd180">
-                        <textarea style ="background-color: #ffd180" id = "second" type="text" name="sub2"></textarea></td>
-                    <td style ="background-color: #ffff8d">
-                        <textarea style ="background-color: #ffff8d" id = "third" type="text" name="sub3"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #0072BE">
+                        <textarea style ="background-color: #0072BE" id = "first" type="textarea" name="sub1"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #00B6E1">
+                        <textarea style ="background-color: #00B6E1" id = "second" type="text" name="sub2"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #00B552">
+                        <textarea style ="background-color: #00B552" id = "third" type="text" name="sub3"></textarea></td>
                 </tr>
                 <tr>
-                    <td style ="background-color: #ccff90">
-                        <textarea style ="background-color: #ccff90" id = "fourth" type="text" name="sub4"></textarea></td>
-                    <td><textarea placeholder = "Your Goal" type="text" name="main" id = "goal"></textarea></td>
-                    <td style ="background-color: #80d8ff">
-                        <textarea style ="background-color: #80d8ff" id = "fifth" type="text" name="sub5"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #A8D800">
+                        <textarea style ="background-color: #A8D800" id = "fourth" type="text" name="sub4"></textarea></td>
+                    <td class ="majorcell"><textarea placeholder = "Your Goal" type="text" name="main" id = "goal"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #FF8E00">
+                        <textarea style ="background-color: #FF8E00" id = "fifth" type="text" name="sub5"></textarea></td>
                 </tr>
                 <tr>
-                    <td style ="background-color: #8c9eff">
-                        <textarea style ="background-color: #8c9eff" id = "sixth" type="text" name="sub6"></textarea></td>
-                    <td style ="background-color: #ea80fc">
-                        <textarea style ="background-color: #ea80fc" id = "seventh" type="text" name="sub7"></textarea></td>
-                    <td style ="background-color: #a7ffeb">
-                        <textarea style ="background-color: #a7ffeb" id = "eighth" type="text" name="sub8"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #FF0013">
+                        <textarea style ="background-color: #FF0013" id = "sixth" type="text" name="sub6"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #DC0067">
+                        <textarea style ="background-color: #DC0067" id = "seventh" type="text" name="sub7"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #A35AB4">
+                        <textarea style ="background-color: #A35AB4" id = "eighth" type="text" name="sub8"></textarea></td>
                 </tr>
             </table>
             </div>
@@ -191,10 +162,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #80d8ff">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled  style ="background-color: #80d8ff" id = "p5"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #FF8E00">
+                        <textarea disabled  style ="background-color: #FF8E00" id = "p5"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -217,10 +186,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #8c9eff">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #8c9eff" id = "p6"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #FF0013">
+                        <textarea disabled style ="background-color: #FF0013" id = "p6"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -239,10 +206,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #ea80fc">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #ea80fc" id = "p7"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #DC0067">
+                        <textarea disabled style ="background-color: #DC0067" id = "p7"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -261,10 +226,8 @@
                 </tr>
                 <tr>
                     <td><textarea type="text"></textarea></td>
-                    <td style ="background-color: #a7ffeb">
-                        <button id = "close-btn" class = "btn-xs btn-danger" style = "float: right; opacity: 0;margin-top:6px">x</button>
-                        <button id = "delete-btn" class = "btn-xs btn-danger" style = "float: left; opacity: 0;margin-top:6px">del</button>
-                        <textarea disabled style ="background-color: #a7ffeb" id = "p8"></textarea></td>
+                    <td class ="majorcell" style ="background-color: #A35AB4">
+                        <textarea disabled style ="background-color: #A35AB4" id = "p8"></textarea></td>
                     <td><textarea type="text"></textarea></td>
                 </tr>
                 <tr>
@@ -279,95 +242,11 @@
         </div>
     </div>
     
-        <!--<p class ="minimize" style = "background-color: #fff; border: 1px solid black; border-radius: 5px; width: 70px; text-align: center; margin:auto; display: block"> Minimize</p> 
-        <p class ="maximize" style = "background-color: #fff; border: 1px solid black; border-radius: 5px; width: 70px; text-align: center; margin:auto; margin-bottom: 50px;"> Maximize</p>-->
         <div class = "btn-group" role = "group" style = "display:table; margin: 0 auto; margin-bottom: 20px">
             <button type= "button" class = "btn btn-info" id = "reset" style = "width: 150px">RESET</button>
             <button type= "button" class = "btn btn-default" id = "minimize" style = "width: 150px">CLOSE ALL</button>
             <button type= "button" class = "btn btn-danger" id = "maximize" style = "width: 150px">OPEN ALL</button>
             
         </div>
-        
-        <p><button type="button" id = "button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#myModal" style = "display: table; margin: 0 auto; width: 40%; margin-bottom: 5px">미리보기</button></p>
-    
-    <!--fb and twitter button-->    
-        <div class="fb-share-button" data-href="http://www.mandart.xyz" data-layout="button_count" style = "margin-left: 47%"></div>
-        <div style = "margin-left: 47%; margin-bottom: 10%;"><a href="https://twitter.com/share" style ="vertical-align: middle" class="twitter-share-button"{count} data-url="http://www.mandart.xyz">Tweet</a>
-            <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
-                {js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}
-                (document, 'script', 'twitter-wjs');
-            </script>
-        </div>
-        
-        <div>
-         <!--ADSENSE-->
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- 만다라트 -->
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5224545817838217"
-                 data-ad-slot="1950063081"
-                 data-ad-format="auto"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-                    
-        
-        <!-- Modal -->
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-        
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h3 class="modal-title"> 다운로드 받으려면 저장클릭</h3>
-                <h6 class= "modal-description">IE이용자는 오른쪽 버튼 > 다른 이름으로 저장 클릭</h6>
-              </div>
-              <div class="modal-body">
-                <p> <img src="" id ="savedimg" style = "width: 100%; height: 100%;"/></p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" id = "download" value= "download" class="btn btn-default">저장</button>
-                <button type="button" id = "close" class="btn btn-default" data-dismiss="modal">닫기</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--Modal End-->
-        
-        <div class = "footer">
-            <div class = "row" style = "margin-bottom: 0.5%;">
-                <div class = "col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
-                    <div style = "width: 100%; height: 100px; background-color: #cfd8dc">
-                        <div style = "margin-left: 4px; margin-top: 4px">
-                        개발을 배운지 얼마 안된 초보 개발자입니다. 
-                        첫 개인 프로젝트인만큼 허접하지만 유용하게 쓰셨으면 좋겠습니다. 
-                        <p>피드백이나 개선방안은 
-                        제 페이스북(facebook.com/xyz.achoo)으로 해주시면 감사하겠습니다. </p>
-                        <p style = "float: right">Copyright ⓒChang Hyun An</p>
-                        <p style ="clear: both; text-align: right">last modified: 2016.01.27 18:24:40(KST)</p>
-                        </div>
-                        
-                        
-                        
-                    </div>
-                   
-                </div>
-            </div>
-            
-        </div>
-        <script>
-              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-            
-              ga('create', 'UA-72818087-1', 'auto');
-              ga('send', 'pageview');
-
-        </script>
-    <!-- -->
     </body>
 </html>
